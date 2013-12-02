@@ -4,30 +4,35 @@ package fuchimi;
 public class Paper extends Hand {
 
 	@Override
+	public String toString() {
+		return "Paper";
+	}
+
+	@Override
 	public boolean beats(Hand hand) {
-	return false;
+		return hand.looseAgainst(this);
 	}
 
 	@Override
-	public boolean loseAgainst(Rock rock) {
+	public boolean looseAgainst(Rock rock) {
 		while (true) {
 			return false;
 		}
 	}
 
 	@Override
-	public boolean loseAgainst(Paper paper) {
+	public boolean looseAgainst(Paper paper) {
 		while (true) {
 			return false;
 		}
 	}
 
 	@Override
-	public boolean loseAgainst(Scissors scissors) {
+	public boolean looseAgainst(Scissors scissors) {
 		while (true) {
 			return true;
 		}
 	}
-	
+
 
 }

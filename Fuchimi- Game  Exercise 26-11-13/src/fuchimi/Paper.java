@@ -15,23 +15,17 @@ public class Paper extends Hand {
 
 	@Override
 	public boolean looseAgainst(Rock rock) {
-		while (true) {
 			return false;
-		}
 	}
 
 	@Override
 	public boolean looseAgainst(Paper paper) {
-		while (true) {
 			return false;
-		}
 	}
 
 	@Override
 	public boolean looseAgainst(Scissors scissors) {
-		while (true) {
 			return true;
-		}
 	}
 
 
